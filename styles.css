@@ -1,12 +1,19 @@
 * {
   box-sizing: border-box;
 }
-
+:root{
+  --primary-color: #cfecff;
+  --secondary-color:#218380;
+  --background-color:#e6faec;
+  --text-color:#368561;
+  --other-color:#0a369d;
+  --accent-color: #73acd1;
+}
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: black;
-  background-color: #e6faec;
+  color: var(--secondary-color);
+  background-color: var(--background-color)
 }
 
 nav {
@@ -17,7 +24,7 @@ nav {
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
-  background-color: #d7ecea;
+  background-color: var(--primary-color);
 }
 
 nav a {
@@ -28,21 +35,23 @@ nav a {
   border: solid 1px #aaa;
   text-align: center;
   text-decoration: none;
-  color: #0a369d;
+  color: var(--accent-color);
 }
 main{
-  color: #218380
+  color: var(--secondary-color)
 }
 nav a[aria-current='page'] {
   color: #000;
-  background-color: #548687;
+  background-color: var(--accent-color);
 }
-
+nav a:hover{
+  background-color: var(--accent-color);
+}
 main {
   padding: 1rem;
 }
 
 h1 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
