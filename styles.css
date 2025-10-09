@@ -32,7 +32,7 @@ nav a {
   min-width: 9rem;
   padding: 0.5rem;
   border-radius: 0.2rem;
-  border: solid 1px #aaa;
+  border: solid 1px var(--other-color);
   text-align: center;
   text-decoration: none;
   color: var(--accent-color);
@@ -41,11 +41,12 @@ main{
   color: var(--secondary-color)
 }
 nav a[aria-current='page'] {
-  color: #000;
+  color: black;
   background-color: var(--accent-color);
 }
+
 nav a:hover{
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
 }
 main {
   padding: 1rem;
@@ -54,4 +55,20 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.9rem;
+}
+.child{
+  border: solid 1px var(--accent-color);
+  padding: 1rem;
+  margin: 1rem
+}
+.parent {
+display: flex;
+width: 100%;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+height: 100p;
+align-items: center;
+border:solid 1px var(--accent-color)
+
 }
