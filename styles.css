@@ -70,22 +70,26 @@ width: 100%;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-around;
-height: 200p;
+height: 200px;
 align-items: center;
 background-color: var(--primary-color) ;
+font-family: 'Times New Roman', Times, serif;
 }
 .note{
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center
-}
-.child2{
   border: solid 1px var(--other-color);
   padding: 1rem;
   margin: 1rem;
+  background-color: var(--accent-color)
+}
+.child2{
+  display:flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 200px;
+  justify-content: space-around;
+  align-items: flex-start;
+  font-family: 'Times New Roman', Times, serif;
 }
 .picture{
   display: flex;
@@ -97,4 +101,17 @@ background-color: var(--primary-color) ;
   min-width: 200px;
   margin: 20px;
   height: auto;
+}
+.book{
+  margin:1rem;
+  padding: 1rem;
+  border:solid 1px var(--other-color)
+}
+.notes{
+  display:flex;
+  width: 100%;
+  flex-direction: row;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
 }
