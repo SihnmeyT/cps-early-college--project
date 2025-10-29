@@ -87,3 +87,14 @@ background-color: var(--primary-color) ;
   padding: 1rem;
   margin: 1rem;
 }
+.picture{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  min-width: 200px;
+  margin: 20px;
+  height: auto;
+}
