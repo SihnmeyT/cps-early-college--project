@@ -69,8 +69,8 @@ display: flex;
 width: 100%;
 flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-around;
-height: 200px;
+justify-content: center;
+height: 100px;
 align-items: center;
 background-color: var(--primary-color) ;
 font-family: 'Times New Roman', Times, serif;
@@ -79,7 +79,7 @@ font-family: 'Times New Roman', Times, serif;
   border: solid 1px var(--other-color);
   padding: 1rem;
   margin: 1rem;
-  background-color: var(--accent-color)
+  background-color: var(--primary-color)
 }
 .child2{
   display:flex;
@@ -91,17 +91,7 @@ font-family: 'Times New Roman', Times, serif;
   align-items: flex-start;
   font-family: 'Times New Roman', Times, serif;
 }
-.picture{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  display: block;
-  padding: 1rem;
-  width: 100%;
-  min-width: 200px;
-  margin: 20px;
-  height: auto;
-}
+
 .book{
   margin:1rem;
   padding: 1rem;
@@ -114,4 +104,21 @@ font-family: 'Times New Roman', Times, serif;
   height: 100px;
   justify-content: space-around;
   align-items: center;
+}
+.parent2{
+  display: flex;
+width: 100%;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+height: 500px;
+align-items: center;
+background-color: var(--primary-color) ;
+min-width: 200px;
+}
+.picture{
+  margin: 1rem;
+  width: 40%;
+  min-width: 200px;
+  border: solid 3px var(--secondary-color)
 }
