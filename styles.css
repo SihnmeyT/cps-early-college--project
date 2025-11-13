@@ -1,19 +1,19 @@
 * {
   box-sizing: border-box;
 }
-:root{
+:root {
   --primary-color: #cfecff;
-  --secondary-color:#218380;
-  --background-color:#e6faec;
-  --text-color:#368561;
-  --other-color:#0a369d;
+  --secondary-color: #218380;
+  --background-color: #e6faec;
+  --text-color: #368561;
+  --other-color: #0a369d;
   --accent-color: #73acd1;
 }
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
   color: var(--secondary-color);
-  background-color: var(--background-color)
+  background-color: var(--background-color);
 }
 
 nav {
@@ -37,15 +37,15 @@ nav a {
   text-decoration: none;
   color: var(--accent-color);
 }
-main{
-  color: var(--secondary-color)
+main {
+  color: var(--secondary-color);
 }
-nav a[aria-current='page'] {
+nav a[aria-current="page"] {
   color: black;
   background-color: var(--accent-color);
 }
 
-a:hover{
+a:hover {
   background-color: var(--secondary-color);
 }
 main {
@@ -61,63 +61,61 @@ h1 {
   border: solid 1px var(--accent-color);
   background-color: var(--primary-color);
   padding: 1rem;
-  margin: 1rem
-
+  margin: 1rem;
 }
 .parent {
-display: flex;
-width: 100%;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-height: 100px;
-align-items: center;
-background-color: var(--primary-color) ;
-font-family: 'Times New Roman', Times, serif;
-
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+  background-color: var(--primary-color);
+  font-family: "Times New Roman", Times, serif;
 }
-.note{
+.note {
   border: solid 1px var(--other-color);
   padding: 1rem;
   margin: 1rem;
-  background-color: var(--primary-color)
+  background-color: var(--primary-color);
 }
-.child2{
-  display:flex;
+.child2 {
+  display: flex;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   height: 200px;
   justify-content: space-around;
   align-items: flex-start;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
-.book{
-  margin:1rem;
+.book {
+  margin: 1rem;
   padding: 1rem;
-  border:solid 1px var(--other-color)
+  border: solid 1px var(--other-color);
 }
-.notes{
-  display:flex;
+.notes {
+  display: flex;
   width: 100%;
   flex-direction: row;
   height: 100px;
   justify-content: space-around;
   align-items: center;
 }
-.parent2{
+.parent2 {
   display: flex;
-width: 100%;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-height: 500px;
-align-items: center;
-background-color: var(--primary-color) ;
-min-width: 200px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 500px;
+  align-items: center;
+  background-color: var(--primary-color);
+  min-width: 200px;
 }
-.picture{
+.picture {
   margin: 1rem;
   width: 40%;
   min-width: 200px;
