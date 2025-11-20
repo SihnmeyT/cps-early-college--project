@@ -40,7 +40,7 @@ nav a {
 main {
   color: var(--secondary-color);
 }
-nav a[aria-current="page"] {
+ nav a[aria-current="page"] {
   color: black;
   background-color: var(--accent-color);
 }
