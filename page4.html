@@ -14,7 +14,28 @@
     <a href="/page3.html">Page 3</a>
     <a href="/"aria-current="page">Contact</a>
   </nav>
-     Email: <input type="text">
+  <form name="my form">
+    <label>
+      <div>
+     Email: 
+     <input type="text" name="email" id="email">
+</label>
+
+</div>
+
+<label for="checkbox"> Would you like to recieve mail?</label>
+<div style="display:flex;">
+  <input type="checkbox" name="checkbox">
+  <div>Yes</div>
+</div>
+<div style="display:flex;">
+<input type="checkbox" name="checkbox">
+<div style="margin-left: .5rem;"> No</div>
+</div>
+<input type="date">
+
+</button>
+<input type="submit" onclick="Fsub()"/>
      <input type="submit" onclick="formSubmit()"/>
      <script>
         function formSubmit() {
