@@ -35,9 +35,20 @@
       <input type="submit" onclick="formSubmit()" />
       <script>
         function formSubmit() {
-          const button= document. getElementById()
-          alert("The form was sucessfully submitted");
+          const myVar= "this is a string";
+          console.log(myVar);
+          const nameInput= document.getElementById("email").value
+          console.log(nameInput);
+          alert("Thanks for Submitting, " + nameInput + "!");
         }
+
+        function substractNumbers(numOne, numTwo) {
+          const subbed = numOne - numTwo;
+          return subbed;
+        }
+        console.log(
+          substractNumbers(14,11)
+        )
       </script>
     </form>
   </body>
