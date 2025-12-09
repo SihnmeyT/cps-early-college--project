@@ -11,11 +11,17 @@
     <nav>
       <a href="/index.html">Home</a>
       <a href="/page2.html">Top Books</a>
-      <a href="/page3.html">Page 3</a>
+      <a href="/page3.html">Authors</a>
       <a href="/" aria-current="page">Contact</a>
     </nav>
 
     <form name="my form">
+      <div>
+        <label>
+          Name:
+          <input type="text" name="Name" id="Name"/>
+        </label>
+      </div>
       <div>
         <label>
           Email:
@@ -37,7 +43,7 @@
         function formSubmit() {
           const myVar= "this is a string";
           console.log(myVar);
-          const nameInput= document.getElementById("email").value
+          const nameInput= document.getElementById("Name").value
           console.log(nameInput);
           alert("Thanks for Submitting, " + nameInput + "!");
         }
@@ -51,5 +57,29 @@
         )
       </script>
     </form>
+    <label>
+
+      <label>
+        Dark mode
+        <input type="checkbox" onchange="toggleDarkMode()">
+      </label>
+      <script>
+        let darkMode= flase;
+        function toggleDarkMode(){
+          // Check if darkMode is false
+          // If it's false -> change to true
+          // If it's true -> change to false
+          console.log("Dark mode initially is" + darkMode);
+          if(darkMode == true) {
+            darkMode = false;
+          } else{
+            //Turn on dark mode
+            darkMode = true;
+            document.body.style["backgroundColor"] = "black";
+            document.body.style["color"] 
+          }
+          console.log("Dark mode has been changed to" + darkMode)
+        }
+      </script>
   </body>
 </html>

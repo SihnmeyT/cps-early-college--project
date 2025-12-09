@@ -58,12 +58,12 @@ h1 {
 }
 
 .picture {
-  display: flex;
+  display: inline-flex;
   width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   font-family: "Times New Roman", Times, serif;
   max-width: 400px;
 }
@@ -77,6 +77,14 @@ h1 {
   font-size: 1rem;
   margin-top: 20px;
   transition: var(--background-color) 0.3s ease;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  
+
+  
 }
 .home-button:hover {
   background-color: var(--text-color);
