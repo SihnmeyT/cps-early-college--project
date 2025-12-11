@@ -3,6 +3,7 @@
   <head>
     <title>Contact</title>
     <meta name="description" content="contact" />
+    <link rel="icon" href="./Images/favicon (8).ico" />
 
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
@@ -19,7 +20,7 @@
       <div>
         <label>
           Name:
-          <input type="text" name="Name" id="Name"/>
+          <input type="text" name="Name" id="Name" />
         </label>
       </div>
       <div>
@@ -41,9 +42,9 @@
       <input type="submit" onclick="formSubmit()" />
       <script>
         function formSubmit() {
-          const myVar= "this is a string";
+          const myVar = "this is a string";
           console.log(myVar);
-          const nameInput= document.getElementById("Name").value
+          const nameInput = document.getElementById("Name").value;
           console.log(nameInput);
           alert("Thanks for Submitting, " + nameInput + "!");
         }
@@ -52,34 +53,34 @@
           const subbed = numOne - numTwo;
           return subbed;
         }
-        console.log(
-          substractNumbers(14,11)
-        )
+        console.log(substractNumbers(14, 11));
       </script>
     </form>
-    <label>
 
-      <label>
-        Dark mode
-        <input type="checkbox" onchange="toggleDarkMode()">
-      </label>
-      <script>
-        let darkMode= flase;
-        function toggleDarkMode(){
-          // Check if darkMode is false
-          // If it's false -> change to true
-          // If it's true -> change to false
-          console.log("Dark mode initially is" + darkMode);
-          if(darkMode == true) {
-            darkMode = false;
-          } else{
-            //Turn on dark mode
-            darkMode = true;
-            document.body.style["backgroundColor"] = "black";
-            document.body.style["color"] 
-          }
-          console.log("Dark mode has been changed to" + darkMode)
+    <label>
+      Dark mode
+      <input type="checkbox" onchange="toggleDarkMode()" />
+    </label>
+    <script>
+      let darkMode = flase;
+      function toggleDarkMode() {
+        // Check if darkMode is false
+        // If it's false -> change to true
+        // If it's true -> change to false
+        console.log("Dark mode initially is" + darkMode);
+        if (darkMode == true) {
+          darkMode = false;
+        } else {
+          //Turn on dark mode
+          darkMode = true;
+          document.body.style["backgroundColor"] = "black";
+          document.body.style["color"] = "#e6faec";
         }
-      </script>
+        console.log("Dark mode has been changed to" + darkMode);
+      }
+    </script>
+    <button class="home-button" onclick="location.href='index.html'">
+      Back to Home
+    </button>
   </body>
 </html>
