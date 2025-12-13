@@ -144,14 +144,15 @@ p {
 }
 .author {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items:center;
   background-color: var(--primary-color);
   padding: 20px;
   margin-top: 20px;
-  justify-content: space-around;
-  gap: 10px;
+  justify-content: center;
+  gap: 20px;
+  align-content: center;
 }
 
 .find {
