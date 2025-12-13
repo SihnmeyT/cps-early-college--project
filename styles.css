@@ -57,6 +57,10 @@ h1 {
   font-size: 1.8rem;
 }
 
+p {
+  font-weight: bold;
+}
+
 .picture {
   display: inline-flex;
   width: 100%;
@@ -137,4 +141,30 @@ h1 {
   font-family: Arial, sans-serif;
   text-align: center;
   width: 150px;
+}
+.author {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 20px;
+  margin-top: 20px;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.find {
+  background-color: var(--background-color);
+  border: 2px solid var(--secondary-color);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  width: 150px;
+  justify-content: space-around;
+}
+.find:hover {
+  background-color: var(--primary-color);
 }
