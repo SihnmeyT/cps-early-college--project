@@ -163,8 +163,9 @@ p {
   border-radius: 10px;
   font-family: Arial, sans-serif;
   text-align: center;
-  width: 150px;
+  width: 150x;
   justify-content: space-around;
+ 
 }
 .find:hover {
   background-color: var(--primary-color);
