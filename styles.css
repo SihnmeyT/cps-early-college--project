@@ -81,7 +81,7 @@ p {
   font-size: 1rem;
   margin-top: 20px;
   transition: var(--background-color);
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
