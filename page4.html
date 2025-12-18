@@ -63,7 +63,7 @@
       <input type="checkbox" onchange="toggleDarkMode()" />
     </label>
     <script>
-      let darkMode = flase;
+      let darkMode = false;
       function toggleDarkMode() {
         // Check if darkMode is false
         // If it's false -> change to true
@@ -71,11 +71,13 @@
         console.log("Dark mode initially is" + darkMode);
         if (darkMode == true) {
           darkMode = false;
+          document.body.style["backgroundColor"] = "#e6faec";
+          document.body.style["color"] = "#218380"
         } else {
           //Turn on dark mode
           darkMode = true;
           document.body.style["backgroundColor"] = "black";
-          document.body.style["color"] = "#e6faec";
+          document.body.style["color"] = "#218380";
         }
         console.log("Dark mode has been changed to" + darkMode);
       }
